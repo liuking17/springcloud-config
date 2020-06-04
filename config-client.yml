@@ -1,0 +1,24 @@
+spring:
+    profiles:
+        active: dev
+        
+        
+---
+spring:
+    profiles: dev
+    application:
+        name: springcloud-provider-dept
+eureka:
+    client:
+        service-url:
+            defaultZone: defaultZone: http://eureka7001.com:7001/eureka/
+        
+---
+spring:
+    profiles: test
+    application:
+        name: springcloud-provider-dept
+eureka:
+    client:
+        service-url:
+            defaultZone: defaultZone: http://eureka7001.com:7001/eureka/
